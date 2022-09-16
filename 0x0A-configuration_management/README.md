@@ -15,6 +15,7 @@
 Your Ubuntu 20.04 VM should have Puppet 5.5 preinstalled.
 
 ## Install puppet
+
 ```
 $ apt-get install -y ruby=1:2.7+1 --allow-downgrades
 $ apt-get install -y ruby-augeas
@@ -44,7 +45,7 @@ Using Puppet, create a file in `/tmp`.
 - File group is `www-data`
 - File contains `I love Puppet`
 
-### 1.Install a Package
+### 1. Install a Package
 
 - Using Puppet, install *flask* from *pip3*.
 
@@ -53,13 +54,15 @@ Using Puppet, create a file in `/tmp`.
 Install *flask*
 Version must be *2.1.0*
 
-### Execute a Command
+### 2. Execute a Command
 
-Using Puppet, create a manifest that kills a process named *killmenow*.
+Using Puppet, create a manifest that kills a process named 
+*killmenow*.
 
 Requirements:
 
 Must use the *exec* Puppet resource
+
 Must use *pkill*
 
 Example:
